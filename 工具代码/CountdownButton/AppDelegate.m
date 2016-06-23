@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LogViewController.h"
+#import "AppDelegate+GSCategory.h"
 @interface AppDelegate ()
 
 @end
@@ -17,16 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    //创建类减少 此处的代码
+//    [self GS_SetRootController];  //练习代码
     
-    _window.backgroundColor = [UIColor whiteColor];
-    
-    [_window makeKeyAndVisible];
-    
-    LogViewController *Log= [[LogViewController alloc]init];
-    
-    _window.rootViewController = Log;
-    
+    [self isGSTabVC:NO];
+      
     return YES;
 }
 

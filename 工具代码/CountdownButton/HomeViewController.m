@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "CutdownViewController.h"
+#import "UIButton+GSbutton.h"
 @interface HomeViewController ()<showTimeDelegate>{
     NSInteger finaNum;
 }
@@ -21,7 +22,7 @@
     [super viewDidLoad];
     
     finaNum=0;
-
+    
     
     [self creatUI];
 }
@@ -32,11 +33,12 @@
     
     button.frame = CGRectMake(150, 200, 100, 50);
     
-    [button setTitle:@"进入页面" forState:UIControlStateNormal];
+    [button GS_SetMyButtonWithName:@"进入页面"];
     
     [button addTarget:self action:@selector(playInputClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
+    
 }
 
 -(void)playInputClick{
@@ -46,7 +48,7 @@
     Cutdown.numvalues = finaNum;
     
     Cutdown.delegate=self;
-
+    
     [self.navigationController pushViewController:Cutdown animated:NO];
     
 }
@@ -54,7 +56,7 @@
 //实现代理里面的方法
 -(void)sendTime:(CutdownViewController *)Cutdown time:(NSInteger)num{
     
-    //把上个页面的值付给他   
+    //把上个页面的值付给他
     finaNum = num;
 }
 - (void)didReceiveMemoryWarning {
@@ -63,13 +65,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
