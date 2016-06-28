@@ -29,7 +29,13 @@
     
     UINavigationController *HomeNav = [[UINavigationController alloc]initWithRootViewController:Home];
     
-    MeseeageViewController *Message = [[MeseeageViewController alloc]init];
+   
+    //SB的用法  单独创建一个SB文件  首先要把他和相关的文件关联起来  然后再命名ID   在这里使用才可以
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Runtime" bundle:[NSBundle mainBundle]];
+    
+    MeseeageViewController *Message = (MeseeageViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Runtime"];
+    
+//    MeseeageViewController *Message = [[MeseeageViewController alloc]init];
     
     UINavigationController *MessageNav = [[UINavigationController alloc]initWithRootViewController:Message];
     

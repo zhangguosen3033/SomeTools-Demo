@@ -10,4 +10,10 @@
 
 @interface person : NSObject
 
+@property (nonatomic,assign)int age;    //外部调用的类
+
+-(void)func1;
+-(void)func2;
+
 @end
+

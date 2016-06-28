@@ -9,4 +9,7 @@
     
 2.信息页面
 
+    更新3).BaseViewController函数里简单介绍了storyboard的使用方法，增加了KVC KVO用法的简单举例；运用了Category，对runtime运用代码在(MeseeageViewController.m)中进行了简单举例。
+
+
 3.我的界面  

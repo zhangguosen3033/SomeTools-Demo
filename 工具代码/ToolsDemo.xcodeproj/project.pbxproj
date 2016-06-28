@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1842074A1D226D5A004AA488 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 184207491D226D5A004AA488 /* Student.m */; };
+		1842074D1D226F44004AA488 /* Runtime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1842074C1D226F44004AA488 /* Runtime.storyboard */; };
+		184207501D227195004AA488 /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842074F1D227195004AA488 /* person.m */; };
+		184207531D2271F4004AA488 /* person+PersonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 184207521D2271F4004AA488 /* person+PersonCategory.m */; };
 		186785071D1BA9ED009FD0A0 /* UIButton+GSbutton.m in Sources */ = {isa = PBXBuildFile; fileRef = 186785061D1BA9ED009FD0A0 /* UIButton+GSbutton.m */; };
 		1867850A1D1BB61B009FD0A0 /* AppDelegate+GSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 186785091D1BB61B009FD0A0 /* AppDelegate+GSCategory.m */; };
 		186785101D1BBB81009FD0A0 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1867850D1D1BBB81009FD0A0 /* SVProgressHUD.bundle */; };
@@ -65,6 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184207481D226D5A004AA488 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		184207491D226D5A004AA488 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		1842074C1D226F44004AA488 /* Runtime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Runtime.storyboard; sourceTree = "<group>"; };
+		1842074E1D227195004AA488 /* person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		1842074F1D227195004AA488 /* person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		184207511D2271F4004AA488 /* person+PersonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "person+PersonCategory.h"; sourceTree = "<group>"; };
+		184207521D2271F4004AA488 /* person+PersonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "person+PersonCategory.m"; sourceTree = "<group>"; };
 		186785051D1BA9ED009FD0A0 /* UIButton+GSbutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GSbutton.h"; sourceTree = "<group>"; };
 		186785061D1BA9ED009FD0A0 /* UIButton+GSbutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GSbutton.m"; sourceTree = "<group>"; };
 		186785081D1BB61B009FD0A0 /* AppDelegate+GSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+GSCategory.h"; sourceTree = "<group>"; };
@@ -148,6 +159,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184207471D226D2E004AA488 /* KVC KVO辅助类 */ = {
+			isa = PBXGroup;
+			children = (
+				184207481D226D5A004AA488 /* Student.h */,
+				184207491D226D5A004AA488 /* Student.m */,
+			);
+			name = "KVC KVO辅助类";
+			sourceTree = "<group>";
+		};
+		1842074B1D226EED004AA488 /* runtime 相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1842074C1D226F44004AA488 /* Runtime.storyboard */,
+				1842074E1D227195004AA488 /* person.h */,
+				1842074F1D227195004AA488 /* person.m */,
+				184207511D2271F4004AA488 /* person+PersonCategory.h */,
+				184207521D2271F4004AA488 /* person+PersonCategory.m */,
+			);
+			name = "runtime 相关";
+			sourceTree = "<group>";
+		};
 		186785031D1BA92E009FD0A0 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +267,8 @@
 				18EDF89B1D1A6735009C7CBE /* AppDelegate.m */,
 				18EDF89D1D1A6735009C7CBE /* ViewController.h */,
 				18EDF89E1D1A6735009C7CBE /* ViewController.m */,
+				1842074B1D226EED004AA488 /* runtime 相关 */,
+				184207471D226D2E004AA488 /* KVC KVO辅助类 */,
 				1885B5241D1A77CB006BA774 /* CutdownViewcontroller(倒计时按钮) */,
 				1885B5231D1A7256006BA774 /* Base(基页面) */,
 				18EDF8D11D1A6A9D009C7CBE /* Controllers(tabbar页面) */,
@@ -455,6 +489,7 @@
 				18EDF8F51D1A6D6A009C7CBE /* icon_activity_57x49@3x.png in Resources */,
 				18EDF8FD1D1A6D6A009C7CBE /* icon_route_57x49@3x.png in Resources */,
 				18EDF8A21D1A6735009C7CBE /* Main.storyboard in Resources */,
+				1842074D1D226F44004AA488 /* Runtime.storyboard in Resources */,
 				18EDF8FC1D1A6D6A009C7CBE /* icon_route_57x49@2x.png in Resources */,
 				18EDF8F41D1A6D6A009C7CBE /* icon_activity_57x49@2x.png in Resources */,
 			);
@@ -490,8 +525,11 @@
 				18EDF8CC1D1A67EC009C7CBE /* BaseViewController.m in Sources */,
 				186785071D1BA9ED009FD0A0 /* UIButton+GSbutton.m in Sources */,
 				18EDF89C1D1A6735009C7CBE /* AppDelegate.m in Sources */,
+				184207531D2271F4004AA488 /* person+PersonCategory.m in Sources */,
 				186785111D1BBB81009FD0A0 /* SVProgressHUD.m in Sources */,
 				18EDF8991D1A6735009C7CBE /* main.m in Sources */,
+				184207501D227195004AA488 /* person.m in Sources */,
+				1842074A1D226D5A004AA488 /* Student.m in Sources */,
 				18EDF8D41D1A6AE4009C7CBE /* HomeViewController.m in Sources */,
 				18EDF8DA1D1A6B17009C7CBE /* MineViewController.m in Sources */,
 			);

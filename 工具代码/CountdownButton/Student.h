@@ -10,4 +10,6 @@
 
 @interface Student : NSObject
 
+@property (nonatomic,copy)NSString *name;
+
 @end

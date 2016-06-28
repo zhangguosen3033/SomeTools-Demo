@@ -10,4 +10,6 @@
 
 @interface person (PersonCategory)
 
+@property (nonatomic,assign)float height;
+
 @end
