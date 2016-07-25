@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Meseeage View Controller-->
@@ -25,9 +27,16 @@
                                     <action selector="changeVariable:" destination="cT2-kZ-i1f" eventType="touchUpInside" id="zWU-ko-N5L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-0y-TZz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-0y-TZz">
                                 <rect key="frame" x="0.0" y="62" width="375" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="3b5-yP-A18"/>
+                                    <constraint firstAttribute="width" secondItem="ibL-0y-TZz" secondAttribute="height" multiplier="25:2" id="CVZ-0b-0Up"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="D38-eC-u3h"/>
+                                    <constraint firstAttribute="height" constant="30" id="fXg-yM-SSM"/>
+                                    <constraint firstAttribute="width" secondItem="ibL-0y-TZz" secondAttribute="height" multiplier="25:2" id="gOC-gI-eKj"/>
+                                </constraints>
                                 <state key="normal" title="获取所有变量">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -77,6 +86,9 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ibL-0y-TZz" secondAttribute="trailing" constant="-20" id="wx2-5l-Eh7"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
